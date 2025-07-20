@@ -1,8 +1,8 @@
 import { Alert, Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParams } from '../../../Navigation/HomeNavigator';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/core';
+import { useNavigation } from '@react-navigation/core';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
@@ -13,8 +13,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../ReduxSystem/store';
 import { clearCart } from '../../../ReduxSystem/slices/cartSlice';
 const CartScreen = () => {
-  const route = useRoute<RouteProp<RootStackParams,"CartScreen">>()
-  console.log(route.params.message)
   type NavigationProp = StackNavigationProp<RootStackParams, 'CartScreen'>;
   const navigation = useNavigation<NavigationProp>();
   const cartSlice = useSelector((state: RootState) => state.cart.carts)
