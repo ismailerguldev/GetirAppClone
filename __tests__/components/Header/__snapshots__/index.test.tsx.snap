@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/HomeScreen/Header renders Correctly 1`] = `
+<View
+  testID="HeaderComponent"
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#F7D102",
+        "flexDirection": "row",
+        "height": 85.376,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "white",
+          "borderBottomRightRadius": 30,
+          "borderTopRightRadius": 30,
+          "flexDirection": "row",
+          "height": "100%",
+          "justifyContent": "space-between",
+          "padding": 15,
+          "width": "80%",
+        }
+      }
+    >
+      <Image
+        height={30}
+        source={
+          {
+            "uri": "https://cdn.getir.com/misc/emoji/house.png",
+          }
+        }
+        width={30}
+      />
+      <Text
+        style={
+          {
+            "fontSize": 16,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Ev
+      </Text>
+      <Text>
+        Dedepaşa Blv. Yenişehir Mahallesi...
+      </Text>
+      <Text />
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "width": "20%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#6a43d9",
+            "fontSize": 12,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        TVS
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#6a43d9",
+            "fontSize": 24,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        13dk
+      </Text>
+    </View>
+  </View>
+</View>
+`;
